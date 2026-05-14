@@ -41,7 +41,7 @@ export default function ChatView({ character, onBack }) {
         content: m.content,
       }))
 
-      const res = await fetch('/api/chat', {
+      const res = await fetch('https://emotion-chat-xxxx.ap-shanghai.app.tcloudbase.com/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
